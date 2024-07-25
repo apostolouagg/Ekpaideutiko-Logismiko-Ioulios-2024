@@ -1,6 +1,6 @@
 # Ekpaideutiko Logismiko Ioulios 2024
 
-## Description
+### Description
 Εφαρμογή για εκμάθηση της γλώσσας Python. Περιέχει θεωρία και Quiz αυτοαξιολόγησης.
 
 Για να μπορείτε να συνδέσετε τη βάση θα πρέπει να αλλάξετε το όνομα του υπολογιστή σας με το hostname της βάσης LAPTOP-9RR5NNA6 καθώς το Server Name είναι LAPTOP-9RR5NNA6\MSSQLSERVER01
