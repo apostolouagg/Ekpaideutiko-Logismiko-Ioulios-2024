@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F053C4C7-FE0A-45BF-BF56-D13D24228C05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EkpaideutikoLogismiko2024</RootNamespace>
+    <AssemblyName>EkpaideutikoLogismiko2024</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConStr-ConStrInPython.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConStr-ConStrInPython.Designer.cs">
+      <DependentUpon>ConStr-ConStrInPython.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConStr-Repetition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConStr-Repetition.Designer.cs">
+      <DependentUpon>ConStr-Repetition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConStr-Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConStr-Selection.Designer.cs">
+      <DependentUpon>ConStr-Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConStr-Sequential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConStr-Sequential.Designer.cs">
+      <DependentUpon>ConStr-Sequential.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConStr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConStr.Designer.cs">
+      <DependentUpon>ConStr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStr-MappingTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataStr-MappingTypes.Designer.cs">
+      <DependentUpon>DataStr-MappingTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStr-SequenceTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataStr-SequenceTypes.Designer.cs">
+      <DependentUpon>DataStr-SequenceTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStr-SetTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataStr-SetTypes.Designer.cs">
+      <DependentUpon>DataStr-SetTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataStr.Designer.cs">
+      <DependentUpon>DataStr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File-CreateWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File-CreateWrite.Designer.cs">
+      <DependentUpon>File-CreateWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File-Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File-Delete.Designer.cs">
+      <DependentUpon>File-Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File-OpenRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File-OpenRead.Designer.cs">
+      <DependentUpon>File-OpenRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File.Designer.cs">
+      <DependentUpon>File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func-AdvFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func-AdvFunc.Designer.cs">
+      <DependentUpon>Func-AdvFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func-FuncArgs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func-FuncArgs.Designer.cs">
+      <DependentUpon>Func-FuncArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func-FuncIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func-FuncIntro.Designer.cs">
+      <DependentUpon>Func-FuncIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func-KeyArgs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Func-KeyArgs.Designer.cs">
+      <DependentUpon>Func-KeyArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions.Designer.cs">
+      <DependentUpon>Functions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro-BasicCommands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro-BasicCommands.Designer.cs">
+      <DependentUpon>Intro-BasicCommands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro-BasicSyntax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro-BasicSyntax.Designer.cs">
+      <DependentUpon>Intro-BasicSyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro-Installation&amp;Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro-Installation&amp;Setup.Designer.cs">
+      <DependentUpon>Intro-Installation&amp;Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro-Running&amp;Debugging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro-Running&amp;Debugging.Designer.cs">
+      <DependentUpon>Intro-Running&amp;Debugging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Introduction.Designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LearnDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LearnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LearnDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LearnDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOP-Advanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP-Advanced.Designer.cs">
+      <DependentUpon>OOP-Advanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOP-Basics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP-Basics.Designer.cs">
+      <DependentUpon>OOP-Basics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOP-BestPractices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP-BestPractices.Designer.cs">
+      <DependentUpon>OOP-BestPractices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOP.Designer.cs">
+      <DependentUpon>OOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz.Designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vars-DataTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vars-DataTypes.Designer.cs">
+      <DependentUpon>Vars-DataTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vars-GlobalVars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vars-GlobalVars.Designer.cs">
+      <DependentUpon>Vars-GlobalVars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vars-Variables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vars-Variables.Designer.cs">
+      <DependentUpon>Vars-Variables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vars-VarNamesAndAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vars-VarNamesAndAssignment.Designer.cs">
+      <DependentUpon>Vars-VarNamesAndAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vars.Designer.cs">
+      <DependentUpon>Vars.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConStr-ConStrInPython.resx">
+      <DependentUpon>ConStr-ConStrInPython.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConStr-Repetition.resx">
+      <DependentUpon>ConStr-Repetition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConStr-Selection.resx">
+      <DependentUpon>ConStr-Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConStr-Sequential.resx">
+      <DependentUpon>ConStr-Sequential.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConStr.resx">
+      <DependentUpon>ConStr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStr-MappingTypes.resx">
+      <DependentUpon>DataStr-MappingTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStr-SequenceTypes.resx">
+      <DependentUpon>DataStr-SequenceTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStr-SetTypes.resx">
+      <DependentUpon>DataStr-SetTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataStr.resx">
+      <DependentUpon>DataStr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File-CreateWrite.resx">
+      <DependentUpon>File-CreateWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File-Delete.resx">
+      <DependentUpon>File-Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File-OpenRead.resx">
+      <DependentUpon>File-OpenRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File.resx">
+      <DependentUpon>File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func-AdvFunc.resx">
+      <DependentUpon>Func-AdvFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func-FuncArgs.resx">
+      <DependentUpon>Func-FuncArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func-FuncIntro.resx">
+      <DependentUpon>Func-FuncIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Func-KeyArgs.resx">
+      <DependentUpon>Func-KeyArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Functions.resx">
+      <DependentUpon>Functions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro-BasicCommands.resx">
+      <DependentUpon>Intro-BasicCommands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro-BasicSyntax.resx">
+      <DependentUpon>Intro-BasicSyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro-Installation&amp;Setup.resx">
+      <DependentUpon>Intro-Installation&amp;Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro-Running&amp;Debugging.resx">
+      <DependentUpon>Intro-Running&amp;Debugging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introduction.resx">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OOP-Advanced.resx">
+      <DependentUpon>OOP-Advanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OOP-Basics.resx">
+      <DependentUpon>OOP-Basics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OOP-BestPractices.resx">
+      <DependentUpon>OOP-BestPractices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OOP.resx">
+      <DependentUpon>OOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vars-DataTypes.resx">
+      <DependentUpon>Vars-DataTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vars-GlobalVars.resx">
+      <DependentUpon>Vars-GlobalVars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vars-Variables.resx">
+      <DependentUpon>Vars-Variables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vars-VarNamesAndAssignment.resx">
+      <DependentUpon>Vars-VarNamesAndAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vars.resx">
+      <DependentUpon>Vars.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LearnDataSet.xsc">
+      <DependentUpon>LearnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LearnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LearnDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LearnDataSet.xss">
+      <DependentUpon>LearnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LearnDataSet1.xsc">
+      <DependentUpon>LearnDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LearnDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LearnDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LearnDataSet1.xss">
+      <DependentUpon>LearnDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
